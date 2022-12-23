@@ -20,7 +20,7 @@ const routes: Routes = [
     // {path:'aboutus',component:AocBlogComponent},
     // {path:'stock-details',component:StockDetailsComponent},
     // {path:'quality-report',component:QualityReportComponent},
-    // {path:'**',component:HomePageComponent}
+    {path:'**',component:DashboardComponent}
   ]} 
 ];
 
