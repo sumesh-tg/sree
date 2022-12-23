@@ -37,14 +37,14 @@
     width: 100px;
   }
   
-  .simply-countdown > .simply-section .simply-amount,
-  .simply-countdown > .simply-section .simply-word {
-    display: block;
-    color: white;
+  .simply-countdown .simply-section .simply-amount,
+  .simply-countdown .simply-section .simply-word {
+    display: block !important;
+    color: white !important;
     /* amounts and words */
   }
   
-  .simply-countdown > .simply-section .simply-amount {
+  .simply-countdown .simply-section .simply-amount {
     font-size: 30px;
     /* amounts */
   }
@@ -55,3 +55,23 @@
     font-size: 12px;
     /* words */
   }
+    @media (max-width:1200px) {
+
+    }
+    @media (max-width:991px) {
+        .fh5co-cover {
+            background-position: center;
+        }
+    }
+    @media (max-width:767px) {
+        .fh5co-cover {
+            height: 440px;
+            background-position: center;
+        }
+    }
+    @media (max-width:400px) {
+        .fh5co-cover {
+            height: 400px;
+            background-position: center;
+        }
+    }
