@@ -4,11 +4,12 @@ import { HomeComponent } from './components/dashboard/body/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 const routes: Routes = [
-  {path:"",redirectTo:"/dashboard",pathMatch:"full"},
-  {path:"dashboard" , component :DashboardComponent,children:[
-    {path:"",redirectTo:"/dashboard/home",pathMatch:"full"},
+  {path:"",component:DashboardComponent},
+  {path:'**',component:DashboardComponent}
+  // {path:"dashboard" , component :DashboardComponent,children:[
+    // {path:"",redirectTo:"/dashboard/home",pathMatch:"full"},
     // {path:'blog',component:AocBlogComponent},
-    {path:'home',component:HomeComponent},
+    // {path:'home',component:HomeComponent},
     // {path:'contact-us',component:ContactUsComponent},
     // {path:'add-vendor',component:AddVendorComponent},
     // {path:'add-post',component:AddPostComponent},
@@ -20,8 +21,8 @@ const routes: Routes = [
     // {path:'aboutus',component:AocBlogComponent},
     // {path:'stock-details',component:StockDetailsComponent},
     // {path:'quality-report',component:QualityReportComponent},
-    {path:'**',component:DashboardComponent}
-  ]} 
+    // {path:'**',component:DashboardComponent}
+  // ]} 
 ];
 
 @NgModule({
