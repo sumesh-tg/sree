@@ -6,6 +6,11 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/dashboard/body/home/home.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { CountdownConfig, CountdownGlobalConfig, CountdownModule } from 'ngx-countdown';
+
+export function countdownConfigFactory(): CountdownConfig {
+  return {};
+}
 
 @NgModule({
   declarations: [
@@ -16,9 +21,10 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
   imports: [
     BrowserModule,
     CarouselModule,
+    CountdownModule, 
     AppRoutingModule
   ],
-  providers: [],
+  providers: [{ provide: CountdownGlobalConfig, useFactory: countdownConfigFactory }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

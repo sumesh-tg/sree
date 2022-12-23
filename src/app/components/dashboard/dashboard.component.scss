@@ -1,0 +1,72 @@
+.custom-style {
+    font-size: 18px;
+    .item {
+      padding-left: 4px;
+      &:nth-child(1) {
+        color: rgb(199, 66, 0);
+      }
+      &:nth-child(2) {
+        color: rgb(45, 0, 170);
+      }
+      &:nth-child(3) {
+        color: rgb(207, 7, 147);
+      }
+    }
+  }
+  .simply-countdown {
+    /* The countdown */
+    margin-bottom: 2em;
+  }
+  
+  .simply-countdown .simply-section {
+    /* coutndown blocks */
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: rgba(241, 78, 149, 0.8);
+    margin: 0 4px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    position: relative;
+    animation: pulse 1s ease infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .simply-countdown > span >.simply-section > div {
+    /* countdown block inner div */
+    display: table-cell;
+    vertical-align: middle;
+    height: 100px;
+    width: 100px;
+  }
+  
+  .simply-countdown > .simply-section .simply-amount,
+  .simply-countdown > .simply-section .simply-word {
+    display: block;
+    color: white;
+    /* amounts and words */
+  }
+  
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 30px;
+    /* amounts */
+  }
+  
+  .simply-countdown > .simply-section .simply-word {
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    font-size: 12px;
+    /* words */
+  }
