@@ -4,9 +4,9 @@ import { HomeComponent } from './components/dashboard/body/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 const routes: Routes = [
-  {path:"",redirectTo:"/dashboard/home",pathMatch:"full"},
+  {path:"",redirectTo:"/dashboard",pathMatch:"full"},
   {path:"dashboard" , component :DashboardComponent,children:[
-    {path:"",redirectTo:"/dashboard/blog",pathMatch:"full"},
+    {path:"",redirectTo:"/dashboard/home",pathMatch:"full"},
     // {path:'blog',component:AocBlogComponent},
     {path:'home',component:HomeComponent},
     // {path:'contact-us',component:ContactUsComponent},
