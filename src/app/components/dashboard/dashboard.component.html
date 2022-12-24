@@ -90,7 +90,7 @@
 							</ul>
 						</li> -->
 						<li class="has-dropdown">
-							<a href="gallery.html">Gallery</a>
+							<a href="javascript:void(0)" (click)="scroll(fh5cogallery)">Gallery</a>
 							<!-- <ul class="dropdown">
 								<li><a href="#">HTML5</a></li>
 								<li><a href="#">CSS3</a></li>
@@ -214,7 +214,7 @@
 	</div>
 
 	
-	<div id="fh5co-gallery" class="fh5co-section-gray">
+	<div id="fh5co-gallery" class="fh5co-section-gray" #fh5cogallery>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -311,7 +311,7 @@
 	</div>
 
 		
-	<div id="fh5co-services" class="fh5co-section-gray">
+	<div *ngIf="false" id="fh5co-services" class="fh5co-section-gray">
 		<div class="container">
 			
 			<div class="row animate-box">

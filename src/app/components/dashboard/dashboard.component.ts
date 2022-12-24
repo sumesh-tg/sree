@@ -93,5 +93,8 @@ export class DashboardComponent implements OnInit {
   handleEvent($event: any) {
     console.log($event);
   }
+  scroll(el: HTMLElement) {
+    el.scrollIntoView();
+}
 
 }
