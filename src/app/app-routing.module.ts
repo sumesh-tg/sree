@@ -5,7 +5,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { PrintComponent } from './components/samples/print/print.component';
 
 const routes: Routes = [
-  {path:"print",component:PrintComponent},
+  {path:"",component:PrintComponent},
   // {path:"",component:DashboardComponent},
   // {path:'**',component:DashboardComponent}
   // {path:"dashboard" , component :DashboardComponent,children:[
