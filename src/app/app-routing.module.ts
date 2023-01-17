@@ -2,9 +2,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/dashboard/body/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { PrintComponent } from './components/samples/print/print.component';
 
 const routes: Routes = [
   {path:"",component:DashboardComponent},
+  {path:"print",component:PrintComponent},
   {path:'**',component:DashboardComponent}
   // {path:"dashboard" , component :DashboardComponent,children:[
     // {path:"",redirectTo:"/dashboard/home",pathMatch:"full"},

@@ -7,6 +7,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/dashboard/body/home/home.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { CountdownConfig, CountdownGlobalConfig, CountdownModule } from 'ngx-countdown';
+import { PrintComponent } from './components/samples/print/print.component';
+import { NgxPrintModule } from 'ngx-print';
 
 export function countdownConfigFactory(): CountdownConfig {
   return {};
@@ -16,9 +18,11 @@ export function countdownConfigFactory(): CountdownConfig {
   declarations: [
     AppComponent,
     DashboardComponent,
-    HomeComponent
+    HomeComponent,
+    PrintComponent
   ],
   imports: [
+    NgxPrintModule,
     BrowserModule,
     CarouselModule,
     CountdownModule, 
