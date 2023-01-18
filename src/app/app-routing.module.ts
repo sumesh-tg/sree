@@ -5,9 +5,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { PrintComponent } from './components/samples/print/print.component';
 
 const routes: Routes = [
-  {path:"",component:PrintComponent},
-  // {path:"",component:DashboardComponent},
-  // {path:'**',component:DashboardComponent}
+  // {path:"",component:PrintComponent},
+  {path:"",component:DashboardComponent},
+  {path:'**',component:DashboardComponent}
   // {path:"dashboard" , component :DashboardComponent,children:[
     // {path:"",redirectTo:"/dashboard/home",pathMatch:"full"},
     // {path:'blog',component:AocBlogComponent},
